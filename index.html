@@ -18,6 +18,9 @@
 </head>
 <body>
 
+  <!-- ===== ВРАЩАЮЩИЙСЯ ГЛОБУС С СВЯЗЯМИ ГОРОДОВ (фон всей страницы) ===== -->
+  <canvas id="bg-globe" aria-hidden="true"></canvas>
+
   <!-- ===== НАВИГАЦИЯ ===== -->
   <header class="nav">
     <a href="#top" class="nav__logo">Murat<span>.</span></a>
@@ -61,48 +64,6 @@
       <span>Интернет-магазины</span><span>•</span><span>SEO</span><span>•</span>
     </div>
   </div>
-
-  <!-- ===== РАБОТЫ / ИЗБРАННЫЕ ПРОЕКТЫ ===== -->
-  <section id="work" class="section">
-    <div class="section__head">
-      <h2>Избранные работы</h2>
-      <p>Недавние проекты, которые я спроектировал и создал с нуля.</p>
-    </div>
-
-    <div class="work-grid">
-
-      <a class="work-card work-card--violet" href="https://matol03.github.io/izdeme-demo/Izdeme%20v2.html" target="_blank" rel="noopener noreferrer">
-        <div class="work-card__shot">
-          <img src="assets/izdeme.png?v=1" alt="IzdeMe — платформа поиска работы с ИИ" loading="lazy" onerror="this.classList.add('placeholder')" />
-        </div>
-        <div class="work-card__meta">
-          <h3>IzdeMe</h3>
-          <p>Платформа поиска работы с ИИ: находит подходящие вакансии по текстовому запросу.</p>
-        </div>
-      </a>
-
-      <a class="work-card work-card--teal" href="https://ai-sudoku-master.vercel.app/" target="_blank" rel="noopener noreferrer">
-        <div class="work-card__shot">
-          <img src="assets/sudoku.png?v=1" alt="Sudoku Master — сайт для игры в судоку с ИИ" loading="lazy" onerror="this.classList.add('placeholder')" />
-        </div>
-        <div class="work-card__meta">
-          <h3>Sudoku Master</h3>
-          <p>Сайт для игры в судоку: создавайте свои уровни и просите подсказки у ИИ.</p>
-        </div>
-      </a>
-
-      <a class="work-card work-card--coral" href="https://plant-disease-scanner.vercel.app/" target="_blank" rel="noopener noreferrer">
-        <div class="work-card__shot">
-          <img src="assets/plant.png?v=1" alt="Plant Disease AI — сканирование болезней растений" loading="lazy" onerror="this.classList.add('placeholder')" />
-        </div>
-        <div class="work-card__meta">
-          <h3>Plant Disease AI</h3>
-          <p>Веб-приложение: сканирует растения и определяет болезни с помощью ИИ.</p>
-        </div>
-      </a>
-
-    </div>
-  </section>
 
   <!-- ===== ГАЛЕРЕЯ ШАБЛОНОВ (с кнопками оплаты Stripe) ===== -->
   <section id="templates" class="section section--tint">
@@ -216,6 +177,48 @@
     </div>
   </section>
 
+  <!-- ===== РАБОТЫ / ИЗБРАННЫЕ ПРОЕКТЫ ===== -->
+  <section id="work" class="section">
+    <div class="section__head">
+      <h2>Избранные работы</h2>
+      <p>Недавние проекты, которые я спроектировал и создал с нуля.</p>
+    </div>
+
+    <div class="work-grid">
+
+      <a class="work-card work-card--violet" href="https://matol03.github.io/izdeme-demo/Izdeme%20v2.html" target="_blank" rel="noopener noreferrer">
+        <div class="work-card__shot">
+          <img src="assets/izdeme.png?v=1" alt="IzdeMe — платформа поиска работы с ИИ" loading="lazy" onerror="this.classList.add('placeholder')" />
+        </div>
+        <div class="work-card__meta">
+          <h3>IzdeMe</h3>
+          <p>Платформа поиска работы с ИИ: находит подходящие вакансии по текстовому запросу.</p>
+        </div>
+      </a>
+
+      <a class="work-card work-card--teal" href="https://ai-sudoku-master.vercel.app/" target="_blank" rel="noopener noreferrer">
+        <div class="work-card__shot">
+          <img src="assets/sudoku.png?v=1" alt="Sudoku Master — сайт для игры в судоку с ИИ" loading="lazy" onerror="this.classList.add('placeholder')" />
+        </div>
+        <div class="work-card__meta">
+          <h3>Sudoku Master</h3>
+          <p>Сайт для игры в судоку: создавайте свои уровни и просите подсказки у ИИ.</p>
+        </div>
+      </a>
+
+      <a class="work-card work-card--coral" href="https://plant-disease-scanner.vercel.app/" target="_blank" rel="noopener noreferrer">
+        <div class="work-card__shot">
+          <img src="assets/plant.png?v=1" alt="Plant Disease AI — сканирование болезней растений" loading="lazy" onerror="this.classList.add('placeholder')" />
+        </div>
+        <div class="work-card__meta">
+          <h3>Plant Disease AI</h3>
+          <p>Веб-приложение: сканирует растения и определяет болезни с помощью ИИ.</p>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
   <!-- ===== ОБО МНЕ ===== -->
   <section id="about" class="about">
     <div class="about__photo">
@@ -275,6 +278,7 @@
     </div>
   </footer>
 
+  <script src="globe.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
