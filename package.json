@@ -1,0 +1,11 @@
+{
+  "name": "murat-craft-v2",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Murat Craft — портфолио и магазин шаблонов (статический сайт, RU)",
+  "scripts": {
+    "dev": "npx --yes serve .",
+    "deploy": "vercel --prod",
+    "deploy:preview": "vercel"
+  }
+}

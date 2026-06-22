@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Murat Craft — сайты на заказ</title>
+  <meta name="description" content="Murat Craft создаёт красивые сайты на заказ для компаний и частных лиц. Выберите готовый шаблон или закажите индивидуальный дизайн." />
+
+  <!-- Иконка вкладки (favicon) -->
+  <link rel="icon" href="assets/favicon.ico?v=4" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png?v=4" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png?v=4" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===== НАВИГАЦИЯ ===== -->
+  <header class="nav">
+    <a href="#top" class="nav__logo">Murat<span>.</span></a>
+    <nav class="nav__links">
+      <a href="#work">Работы</a>
+      <a href="#templates">Шаблоны</a>
+      <a href="#about">Обо мне</a>
+      <a href="#contact" class="nav__cta">Контакты</a>
+    </nav>
+  </header>
+
+  <!-- ===== ГЛАВНЫЙ ЭКРАН ===== -->
+  <section id="top" class="hero">
+    <div class="hero__text">
+      <p class="eyebrow">Веб-дизайнер и разработчик</p>
+      <h1>Создаю сайты,<br />которые <em>запоминаются</em>.</h1>
+      <p class="hero__sub">
+        Сайты на заказ для компаний и частных лиц — минималистичные, яркие
+        и нацеленные на результат. Закажите уникальный дизайн или купите
+        готовый шаблон ниже.
+      </p>
+      <div class="hero__actions">
+        <a href="#templates" class="btn btn--solid">Смотреть шаблоны</a>
+        <a href="#contact" class="btn btn--ghost">Начать проект</a>
+      </div>
+    </div>
+    <div class="hero__photo">
+      <!-- Замените assets/portrait.jpg на своё фото -->
+      <img src="assets/portrait.jpg?v=2" alt="Портрет Murat" onerror="this.classList.add('placeholder');this.alt='Добавьте фото в assets/portrait.jpg'" />
+      <div class="hero__badge">Открыт для новых проектов</div>
+    </div>
+  </section>
+
+  <!-- ===== БЕГУЩАЯ СТРОКА ===== -->
+  <div class="marquee">
+    <div class="marquee__track">
+      <span>Брендинг</span><span>•</span><span>Веб-дизайн</span><span>•</span>
+      <span>Разработка</span><span>•</span><span>Интернет-магазины</span><span>•</span>
+      <span>SEO</span><span>•</span><span>Брендинг</span><span>•</span>
+      <span>Веб-дизайн</span><span>•</span><span>Разработка</span><span>•</span>
+      <span>Интернет-магазины</span><span>•</span><span>SEO</span><span>•</span>
+    </div>
+  </div>
+
+  <!-- ===== РАБОТЫ / ИЗБРАННЫЕ ПРОЕКТЫ ===== -->
+  <section id="work" class="section">
+    <div class="section__head">
+      <h2>Избранные работы</h2>
+      <p>Недавние проекты, которые я спроектировал и создал с нуля.</p>
+    </div>
+
+    <div class="work-grid">
+
+      <a class="work-card work-card--violet" href="https://matol03.github.io/izdeme-demo/Izdeme%20v2.html" target="_blank" rel="noopener noreferrer">
+        <div class="work-card__shot">
+          <img src="assets/izdeme.png?v=1" alt="IzdeMe — платформа поиска работы с ИИ" loading="lazy" onerror="this.classList.add('placeholder')" />
+        </div>
+        <div class="work-card__meta">
+          <h3>IzdeMe</h3>
+          <p>Платформа поиска работы с ИИ: находит подходящие вакансии по текстовому запросу.</p>
+        </div>
+      </a>
+
+      <a class="work-card work-card--teal" href="https://ai-sudoku-master.vercel.app/" target="_blank" rel="noopener noreferrer">
+        <div class="work-card__shot">
+          <img src="assets/sudoku.png?v=1" alt="Sudoku Master — сайт для игры в судоку с ИИ" loading="lazy" onerror="this.classList.add('placeholder')" />
+        </div>
+        <div class="work-card__meta">
+          <h3>Sudoku Master</h3>
+          <p>Сайт для игры в судоку: создавайте свои уровни и просите подсказки у ИИ.</p>
+        </div>
+      </a>
+
+      <a class="work-card work-card--coral" href="https://plant-disease-scanner.vercel.app/" target="_blank" rel="noopener noreferrer">
+        <div class="work-card__shot">
+          <img src="assets/plant.png?v=1" alt="Plant Disease AI — сканирование болезней растений" loading="lazy" onerror="this.classList.add('placeholder')" />
+        </div>
+        <div class="work-card__meta">
+          <h3>Plant Disease AI</h3>
+          <p>Веб-приложение: сканирует растения и определяет болезни с помощью ИИ.</p>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- ===== ГАЛЕРЕЯ ШАБЛОНОВ (с кнопками оплаты Stripe) ===== -->
+  <section id="templates" class="section section--tint">
+    <div class="section__head">
+      <h2>Шаблоны и пакеты</h2>
+      <p>Нужен быстрый запуск? Выберите шаблон или пакет и купите его сразу.</p>
+    </div>
+
+    <div class="template-grid">
+
+      <!-- Карточка шаблона -->
+      <article class="tmpl tmpl--coral">
+        <div class="tmpl__preview">
+          <img class="tmpl__shot" src="assets/tmpl-aurora.svg" alt="Превью шаблона Aurora" loading="lazy" />
+          <span class="tmpl__tag">Лендинг</span>
+        </div>
+        <div class="tmpl__body">
+          <div class="tmpl__top">
+            <h3>Aurora</h3>
+            <span class="tmpl__price">$149</span>
+          </div>
+          <p>Яркий одностраничный сайт для запуска продуктов и личных брендов.</p>
+          <div class="buy-slot" data-template="aurora">
+            <a class="btn btn--solid btn--full" href="https://buy.stripe.com/test_dRm3cxex1bGPbdSaCY08g00" target="_blank" rel="noopener noreferrer">Купить Aurora</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Карточка шаблона -->
+      <article class="tmpl tmpl--violet">
+        <div class="tmpl__preview">
+          <img class="tmpl__shot" src="assets/tmpl-studio.svg" alt="Превью шаблона Studio" loading="lazy" />
+          <span class="tmpl__tag">Портфолио</span>
+        </div>
+        <div class="tmpl__body">
+          <div class="tmpl__top">
+            <h3>Studio</h3>
+            <span class="tmpl__price">$199</span>
+          </div>
+          <p>Многостраничное портфолио для креативщиков, студий и фрилансеров.</p>
+          <div class="buy-slot" data-template="studio">
+            <a class="btn btn--solid btn--full" href="https://buy.stripe.com/test_fZu14pex1fX53LqaCY08g01" target="_blank" rel="noopener noreferrer">Купить Studio</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Карточка шаблона -->
+      <article class="tmpl tmpl--teal">
+        <div class="tmpl__preview">
+          <img class="tmpl__shot" src="assets/tmpl-market.svg" alt="Превью шаблона Market" loading="lazy" />
+          <span class="tmpl__tag">Интернет-магазин</span>
+        </div>
+        <div class="tmpl__body">
+          <div class="tmpl__top">
+            <h3>Market</h3>
+            <span class="tmpl__price">$349</span>
+          </div>
+          <p>Аккуратный магазин с корзиной и оформлением заказа, готовый под ваши товары.</p>
+          <div class="buy-slot" data-template="market">
+            <a class="btn btn--solid btn--full" href="https://buy.stripe.com/test_00w6oJ4WrdOX4Pu8uQ08g02" target="_blank" rel="noopener noreferrer">Купить Market</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Карточка шаблона -->
+      <article class="tmpl tmpl--amber">
+        <div class="tmpl__preview">
+          <img class="tmpl__shot" src="assets/tmpl-bloom.svg" alt="Превью шаблона Bloom" loading="lazy" />
+          <span class="tmpl__tag">Бизнес</span>
+        </div>
+        <div class="tmpl__body">
+          <div class="tmpl__top">
+            <h3>Bloom</h3>
+            <span class="tmpl__price">$249</span>
+          </div>
+          <p>Дружелюбный сайт для малого бизнеса: услуги, цены и контакты.</p>
+          <div class="buy-slot" data-template="bloom">
+            <a class="btn btn--solid btn--full" href="https://buy.stripe.com/test_3cI9AV74zh190zecL608g03" target="_blank" rel="noopener noreferrer">Купить Bloom</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Карточка шаблона -->
+      <article class="tmpl tmpl--coral">
+        <div class="tmpl__preview">
+          <img class="tmpl__shot" src="assets/tmpl-pulse.svg" alt="Превью шаблона Pulse" loading="lazy" />
+          <span class="tmpl__tag">SaaS</span>
+        </div>
+        <div class="tmpl__body">
+          <div class="tmpl__top">
+            <h3>Pulse</h3>
+            <span class="tmpl__price">$399</span>
+          </div>
+          <p>Современный маркетинговый сайт для SaaS с тарифами и функциями.</p>
+          <div class="buy-slot" data-template="pulse">
+            <a class="btn btn--solid btn--full" href="https://buy.stripe.com/test_7sY00l1Kf6mv81GdPa08g04" target="_blank" rel="noopener noreferrer">Купить Pulse</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Карточка индивидуального заказа -->
+      <article class="tmpl tmpl--dark">
+        <div class="tmpl__body tmpl__body--center">
+          <h3>Нужно что-то особенное?</h3>
+          <p>Полностью индивидуальный дизайн и разработка под ваш бренд с нуля.</p>
+          <span class="tmpl__price tmpl__price--from">от $1 200</span>
+          <a class="btn btn--light btn--full" href="#contact">Запросить расчёт</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ===== ОБО МНЕ ===== -->
+  <section id="about" class="about">
+    <div class="about__photo">
+      <img src="assets/about.jpg?v=2" alt="Murat за работой" onerror="this.classList.add('placeholder')" />
+    </div>
+    <div class="about__text">
+      <p class="eyebrow">Обо мне</p>
+      <h2>Привет, я Мурат.</h2>
+      <p>
+        Я дизайнер и разработчик и помогаю компаниям и частным лицам уверенно
+        и понятно заявить о себе в интернете. Люблю чистые макеты, смелый цвет
+        и сайты, которые быстро загружаются и работают без лишних усилий.
+      </p>
+      <p>
+        
+      </p>
+
+      <ul class="cred-list">
+        <li>Индивидуальный дизайн и фронтенд-разработка</li>
+        <li>Адаптивная, доступная и SEO-дружелюбная вёрстка</li>
+        <li>Интернет-магазины и интеграция оплаты через Stripe</li>
+        <li>Фирменный стиль и визуальные системы</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== КОНТАКТЫ ===== -->
+  <section id="contact" class="contact">
+    <div class="contact__inner">
+      <div class="contact__avatar">
+        <img src="assets/contact.jpg?v=2" alt="Murat" onerror="this.classList.add('placeholder')" />
+      </div>
+      <p class="eyebrow eyebrow--light">Контакты</p>
+      <h2>Давайте создадим что-то,<br />что захочется сохранить в закладки.</h2>
+      <p class="contact__sub">
+        Расскажите о вашем проекте или просто поздоровайтесь. Обычно отвечаю
+        в течение дня.
+      </p>
+      <a href="https://www.instagram.com/murat__askar/" class="btn btn--light btn--lg" target="_blank" rel="noopener noreferrer">
+        Связаться со мной
+      </a>
+      <div class="contact__alt">
+        <a href="mailto:murar.astana03@gmail.com">murar.astana03@gmail.com</a>
+        <span>·</span>
+        <a href="#templates">Или купите шаблон</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ПОДВАЛ ===== -->
+  <footer class="footer">
+    <span>© <span id="year"></span> Murat Craft</span>
+    <div class="footer__links">
+      <a href="#work">Работы</a>
+      <a href="#templates">Шаблоны</a>
+      <a href="#contact">Контакты</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

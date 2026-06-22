@@ -1,0 +1,37 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Превью бизнес-сайта Bloom">
+  <defs>
+    <linearGradient id="bloom" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffb020"/>
+      <stop offset="1" stop-color="#ff5d3b"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="#ffffff"/>
+  <rect width="800" height="44" fill="#f3ece1"/>
+  <circle cx="26" cy="22" r="6" fill="#ff5d3b"/>
+  <circle cx="48" cy="22" r="6" fill="#ffb020"/>
+  <circle cx="70" cy="22" r="6" fill="#14b8a6"/>
+  <rect x="110" y="13" width="560" height="18" rx="9" fill="#e7ddcf"/>
+  <rect x="40" y="64" width="120" height="20" rx="6" fill="#241f33"/>
+  <rect x="470" y="68" width="50" height="12" rx="6" fill="#cfd3da"/>
+  <rect x="534" y="68" width="50" height="12" rx="6" fill="#cfd3da"/>
+  <rect x="640" y="60" width="120" height="30" rx="15" fill="url(#bloom)"/>
+  <rect x="40" y="132" width="320" height="34" rx="9" fill="#241f33"/>
+  <rect x="40" y="178" width="260" height="34" rx="9" fill="#241f33"/>
+  <rect x="40" y="232" width="300" height="12" rx="6" fill="#dfe2e8"/>
+  <rect x="40" y="254" width="240" height="12" rx="6" fill="#dfe2e8"/>
+  <rect x="40" y="290" width="160" height="44" rx="22" fill="url(#bloom)"/>
+  <rect x="420" y="120" width="340" height="226" rx="18" fill="url(#bloom)" opacity="0.92"/>
+  <circle cx="500" cy="210" r="34" fill="#ffffff" opacity="0.5"/>
+  <rect x="40"  y="372" width="226" height="92" rx="14" fill="#f4f5f7"/>
+  <rect x="287" y="372" width="226" height="92" rx="14" fill="#f4f5f7"/>
+  <rect x="534" y="372" width="226" height="92" rx="14" fill="#f4f5f7"/>
+  <circle cx="74"  cy="408" r="15" fill="#ffb020"/>
+  <circle cx="321" cy="408" r="15" fill="#ff7a3b"/>
+  <circle cx="568" cy="408" r="15" fill="#ff5d3b"/>
+  <rect x="102" y="402" width="120" height="12" rx="6" fill="#d9dde3"/>
+  <rect x="349" y="402" width="120" height="12" rx="6" fill="#d9dde3"/>
+  <rect x="596" y="402" width="120" height="12" rx="6" fill="#d9dde3"/>
+  <rect x="62"  y="434" width="170" height="10" rx="5" fill="#e9ecf1"/>
+  <rect x="309" y="434" width="170" height="10" rx="5" fill="#e9ecf1"/>
+  <rect x="556" y="434" width="170" height="10" rx="5" fill="#e9ecf1"/>
+</svg>
